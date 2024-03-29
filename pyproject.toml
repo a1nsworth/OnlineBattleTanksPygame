@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "battletanks"
+version = "0.1.0"
+description = ""
+authors = ["a1nsworth <xed255@gmail.com>"]
+readme = "README.md"
+#repository=""
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.5.2"
+dependency-injector = "^4.41.0"
+pyyaml = "^6.0.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+server="src.game_objects.server:main"
+client="src.game_objects.client:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

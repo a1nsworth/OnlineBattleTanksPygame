@@ -1,0 +1,14 @@
+version: "2.1"
+
+services:
+  server:
+    build: .
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    expose:
+      - "${PORT}"
+    ports:
+      - "${PORT}:${PORT}/tcp"
+    command: "make run-server"

@@ -1,0 +1,5 @@
+app:
+  window:
+    height: 800
+    width: 600
+    title: "Battle Tanks Online"
